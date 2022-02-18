@@ -1,0 +1,24 @@
+/* header icon size  */
+.header-icon{
+    height: 50px;
+    width: 50px;
+}
+/* custom button  */
+.btn-width{
+    width: 35%;
+}
+/* custom media query */
+@media only screen and (min-width: 992px) {
+    .custom-marign-right{
+        margin-right: 40px;
+    }
+    .custom-marign-left{
+        margin-right: 40px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .custom-marign-bottom{
+        margin-bottom: 40px;
+    }
+}
+

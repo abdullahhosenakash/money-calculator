@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap styles  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Money Calculator</title>
+</head>
+
+<body>
+    <!-- header starts  -->
+    <header class="container my-5">
+        <h1 class="display-5 fw-bolder text-center">Money Calculator <img src="images/money-bag.png" class="header-icon"
+                alt=""></h1>
+    </header>
+
+    <!-- main section starts  -->
+    <main>
+        <section class="container d-flex flex-lg-row flex-column mb-5">
+            <!-- main image  -->
+            <div class="w-100 custom-marign-right">
+                <img src="images/main-image.jpg" alt="" class="img-fluid h-100 rounded-3 custom-marign-bottom">
+            </div>
+
+            <!-- calculation section  -->
+            <div class="bg-secondary bg-opacity-25 w-100 text-center py-3  rounded-3 custom-marign-left">
+                <!-- income  -->
+                <h5>Income</h5>
+                <div class="mb-3">
+                    <label for="income" class="me-2">Income:</label>
+                    <input type="text" class="py-2 border-0 px-2 w-50 rounded" id="total-income">
+                </div>
+
+                <!-- expenses  -->
+                <h5>Expenses</h5>
+                <div class="mb-3">
+                    <label for="food" class="me-2">Food: </label>
+                    <input type="text" class="py-2 border-0 px-2 w-50 rounded" id="food-cost">
+                </div>
+                <div class="mb-3">
+                    <label for="rent" class="me-2">Rent: </label>
+                    <input type="text" class="py-2 border-0 px-2 w-50 rounded" id="rent-cost">
+                </div>
+                <div class="mb-3">
+                    <label for="clothes" class="me-2">Clothes: </label>
+                    <input type="text" class="py-2 border-0 px-2 w-50 rounded" id="clothes-cost">
+                </div>
+
+                <!-- calculate button  -->
+                <button type="button" class="btn btn-primary btn-lg btn-width text-center px-2"
+                    id="calculate-button">Calculate</button>
+
+                <!-- total expenses -->
+                <h5 class="my-3">Total Expenses: <span id="total-expenses">0</span></h5>
+
+                <!-- balance -->
+                <h5 class="my-3">Balance: <span id="balance">0</span></h5>
+
+                <!-- Save -->
+                <div class="mb-3">
+                    <label for="save" class="me-2">Save: </label>
+                    <input type="text" class="py-2 border-0 px-2 w-25 me-2 rounded" id="saving-input">
+                    <span>%</span>
+                    <button type="button" class="btn btn-primary btn-lg btn-width ms-2" id="save-button"
+                        disabled>Save</button>
+                </div>
+
+                <!-- saving and remaining balance -->
+                <h5 class="my-3">Saving Amount: <span id="saving-amount">0</span></h5>
+                <h5 class="my-3">Remaining Balance: <span id="remaining-balance">0</span></h5>
+            </div>
+        </section>
+    </main>
+
+    <!-- javascript files  -->
+    <script src="js/calculation.js"></script>
+</body>
+
+</html>
